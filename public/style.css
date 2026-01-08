@@ -10,6 +10,11 @@
     --container-width: 1005px;
 }
 
+header {
+    background: linear-gradient(181deg,rgb(75, 75, 75) 0%, rgba(0, 0, 0, 1) 45%);
+    box-shadow: 0 20px 32px 0px #9d9d9d; 
+}
+
 .desktop-text {
     display: inline;
 }
@@ -123,6 +128,7 @@ body {
     /* Was 1.2, increased significantly */
     padding: 24px 60px;
     border-radius: 12px;
+    box-shadow: 0 20px 32px 0px #9d9d9d; 
 }
 
 .btn-cta:hover {
