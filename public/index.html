@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESNIKIS® - Tenis Personalizados</title>
+    <meta name="description"
+        content="Crea tus tenis con el diseño que tu quieras, nosotros fabricamos los tenis con tu diseño y te los enviamos a domicilio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">
+                <img src="img-titulo1.png" alt="TENIS" class="title-img-large reveal delay">
+                <img src="img-titulo2.png" alt="PERSONALIZADOS CON TU DISEÑO" class="title-img-sub reveal delay-100">
+            </h1>
+            <a href="https://esnikis-designer-app.web.app/" class="btn-cta btn-primary"><span></span>COMENZAR AHORA</span>
+                <img src="img-icon-go.png" alt="ir" class="arrow-icon"></a>
+
+            <div class="video-container main-video">
+                <video autoplay muted loop playsinline class="responsive-video">
+                    <source src="img-video-portada.webm" type="video/webm">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="container">
+            <p class="intro-description reveal">
+                Crea tus tenis con el diseño que tu quieras,<br>
+                nosotros fabricamos los tenis con tu diseño<br>
+                y te los enviamos a domicilio!
+            </p>
+            <!--
+            <p class="sub-intro reveal delay-200">mira como funciona:</p>
+
+            <div class="video-placeholder small-video reveal delay-300">
+                <span>video.webm</span>
+            </div>
+-->
+            <div class="pricing-features reveal">
+                <div class="pricing">
+                    <span class="pricing-label">Precio</span>
+                    <span class="price-value">$999</span>
+                    <span class="price-currency">Pesos Méxicanos</span>
+                </div>
+                <ul class="features-list reveal delay-200">
+                    <li><i data-lucide="check"></i><span>Puedes elegir diseños del catálogo<br>o crear tu propio
+                            diseño.</span></li>
+                    <li><i data-lucide="check"></i><span>Los tenis son fabricados<br>especialmente para ti.</span></li>
+                    <li><i data-lucide="check"></i><span>Tallas del #22 al #30</span></li>
+                    <li><i data-lucide="check"></i><span>Modelo unisex.</span></li>
+                    <li><i data-lucide="check"></i><span>Envíos a todo México.</span></li>
+                    <li><i data-lucide="check"></i><span>Tiempo de fabricación 30 días.</span></li>
+                </ul>
+            </div>
+
+            <a href="https://esnikis-designer-app.web.app/" class="btn-cta btn-secondary reveal">
+                <span class="desktop-text">COMIENZA TU DISEÑO</span>
+                <span class="mobile-text">COMIENZA<br>TU DISEÑO<br>AHORA</span>
+                <img src="img-icon-go.png" alt="ir" class="arrow-icon">
+            </a>
+
+            <div class="footer-links reveal">
+                <button id="btn-faq" class="link-btn">
+                    <i data-lucide="message-circle-question" class="faq-icon"></i>
+                    Preguntas frecuentes
+                </button>
+                <span class="separator">/</span>
+                <a href="https://tenispersonalizados.com" class="link-btn"><i data-lucide="building-2"
+                        class="faq-icon"></i>Empresas y proyectos (precio
+                    mayoreo)</a>
+            </div>
+
+            <div class="photo-placeholders reveal">
+                <a href="https://www.instagram.com/esnikis/" target="_blank"><img src="img-social-instagram.png"
+                        alt="Instagram" class="social-icon"></a>
+                <a href="https://www.tiktok.com/@esnikis" target="_blank"><img src="img-social-tiktok.png" alt="TikTok"
+                        class="social-icon"></a>
+                <a href="https://www.facebook.com/esnikis" target="_blank"><img src="img-social-facebook.png"
+                        alt="Facebook" class="social-icon"></a>
+            </div>
+
+            <div class="photo-placeholder-single">
+                <img src="img-footer-esnikis.png" alt="Esnikis" class="footer-logo">
+            </div>
+
+            <footer class="legal-footer">
+                <p>ESNIKIS® Fábrica de tenis personalizados. Hecho en México.</p>
+            </footer>
+        </section>
+    </main>
+
+    <!-- FAQ Modal -->
+    <div id="faq-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="faq-item">
+                <h3>¿MÍNIMO DE COMPRA?</h3>
+                <p>Desde 1 par.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿CÓMO PUEDO HACER MI DISEÑO?</h3>
+                <p>Una vez que comiences, nuestro sistema te guiará para cargar tu diseño o elegir uno del catálogo.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿TALLAS DISPONIBLES?</h3>
+                <p>Tenemos tallas del #22 al #30<br>
+                    *Son tallas mexicanas en centímetros.<br>
+                    *No manejamos medios puntos.<br>
+                    (Ejemplo: si una persona es talla #3.5 entonces recomendamos solicitar un talla #4)<br>
+                    *Aproximadamente a partir de un niño de 8-9 años, la talla #22 le puede quedar (puede variar en cada
+                    persona).</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿CUANTO TIEMPO TARDA EN LLEGAR MI PEDIDO?</h3>
+                <p>El tiempo de fabricación de tus tenis, es de 30 días naturales.<br>
+                    Una vez que están listos tus tenis, te los enviamos por paquetería y tarda entre 3 a 5 días el
+                    envío.<br>
+                    *Sólo hacemos envíos en todo México.<br>
+                    *No hacemos envíos a otros países.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿LOS TENIS SON PINTADOS?</h3>
+                <p>No son pintados.<br>
+                    Utilizamos un sistema de impresión de alta calidad, con tecnología HD industrial.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿CÓMO SE FABRICAN MIS TENIS?</h3>
+                <p>Somos fabricantes directos.<br>
+                    Tus tenis los fabricamos desde cero por completo, especialmente para ti. Tus tenis serán únicos en
+                    el mundo!</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿SI YO LES DOY UNOS TENIS QUE YA TENGA, ME LOS PUEDEN PERSONALIZAR?</h3>
+                <p>No.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿CUANTOS MODELOS DE TENIS MANEJAN?</h3>
+                <p>Manejamos 1 sólo modelo de tenis (como el que aparece en las fotos).<br>
+                    El tenis es modelo casual.<br>
+                    Es un modelo unisex (para hombres y mujeres) se ven increíbles con cualquier tipo de ropa.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿QUÉ PARTES DEL TENIS SE PUEDEN PERSONALIZAR?</h3>
+                <p>Se puede personalizar por completo todo el exterior del tenis:<br>
+                    (Laterales, Punta, Lengüeta, Talón y Área de agujetas).</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿COLORES DE SUELAS?</h3>
+                <p>Sólo en color Blanco.<br>
+                    *No manejamos otros colores de suela, únicamente blanco.<br>
+                    *La suela es ligera y moderna.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿COLORES DE AGUJETAS?</h3>
+                <p>Sólo en color blanco.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿SON CÓMODOS LOS TENIS?</h3>
+                <p>Si.<br>
+                    En la planta del pie, utilizamos plantilla de 4 capas.<br>
+                    En la lengüeta y talón aplicamos espuma de espesor grueso para máximo confort en el empeine y talón.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>¿QUÉ TIPO DE MATERIALES SE UTILIZAN?</h3>
+                <p>Sintético, imitación piel con Suela Phylon.<br>
+                    Utilizamos materiales e insumos de calidad.<br>
+                    La fabricación es 100% hecha en México.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿SE PUEDEN LIMPIAR?</h3>
+                <p>Si.<br>
+                    Se pueden limpiar fácilmente.<br>
+                    No se despintan.<br>
+                    Puedes utilizar agua, jabón, pinol, etc.<br>
+                    Incluso se pueden meter en lavadora.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿GARANTÍA Y DEVOLUCIONES?</h3>
+                <p>30 días naturales de garantía.<br><br>
+                    Cuidamos cada uno de nuestros procesos de fabricación, para que el diseño, impresión, corte,
+                    costura, montado, pegado, y empaque mantengan un alto estandard de calidad.<br><br>
+                    <strong>SI aplica garantía:</strong><br>
+                    – En suelas despegadas de fabricación (o en su uso diario con más del 10% de despegado) (con un uso
+                    normal, casual, no deportivo).<br>
+                    – En costuras rotas (de fabricación o en su uso diario) (con un uso normal, casual, no
+                    deportivo).<br>
+                    – En error de tallas (Sólo si es error de fabricación).<br>
+                    – En mala calidad de impresión (manchas de tinta, bandeo, espacios en blanco donde debería haber
+                    impresión).<br><br>
+                    <strong>NO aplica garantía:</strong><br>
+                    – En cambios de numeración, por error del cliente (por error al momento de hacer el pedido o talla
+                    equivocada por mala medición).<br>
+                    – No aplica garantía, en lo relacionado con el tema de diseño, gráficos y textos, debido a que
+                    previamente es revisado y autorizado por el cliente.<br>
+                    – El acomodo del diseño ó los gráficos impresos, pueden tener variación de tonalidad y de posición
+                    en las diferentes tallas, debido a que cada par de tenis es fabricado a mano, pieza por pieza.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>¿CÓMO DAR SEGUIMIENTO A MI PEDIDO?</h3>
+                <p>Una vez realizada tu compra, podrás dar seguimiento de tu pedido por medio del sistema que te
+                    indicará el status de tu pedido y seguimiento de tu envío.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿MI COMPRA ES SEGURA?</h3>
+                <p>Si, totalmente.<br>
+                    Incluso si necesitas contactarnos o tienes algún problema, podrás contactarnos por medio del sistema
+                    de seguimiento donde se
+                    genera el status de tu pedido.</p>
+            </div>
+            <div class="faq-item">
+                <h3>PARA NEGOCIOS, EMPRESAS, AGENCIAS Y PROYECTOS:</h3>
+                <p>Tenemos opción de precios especiales de mayoreo.<br>
+                    Visita nuestro sitio <a href="http://www.tenispersonalizados.com"
+                        target="_blank">www.tenispersonalizados.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
