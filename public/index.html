@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESNIKIS® - Tenis Personalizados</title>
+    <title>ESNIKIS® Tenis Personalizados</title>
     <meta name="description"
         content="Crea tus tenis con el diseño que tu quieras, nosotros fabricamos los tenis con tu diseño y te los enviamos a domicilio.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -28,7 +32,7 @@
                 <img src="img-icon-go.png" alt="ir" class="arrow-icon"></a>
 
             <div class="video-container main-video">
-                <video autoplay muted loop playsinline class="responsive-video">
+                <video autoplay muted loop playsinline webkit-playsinline class="responsive-video">
                     <source src="img-video-portada.webm" type="video/webm">
                     Tu navegador no soporta videos.
                 </video>
@@ -234,6 +238,19 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
