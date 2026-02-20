@@ -272,7 +272,14 @@ body {
 .price-currency {
     font-size: 1rem;
     color: #888;
-    margin-top: -5px;
+    margin-top: 5px;
+}
+
+.price-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+    font-weight: 400;
 }
 
 .features-list {
@@ -376,6 +383,10 @@ body {
     display: block;
 }
 
+.banner-mobile {
+    display: none;
+}
+
 /* Modal */
 .modal {
     display: none;
@@ -436,6 +447,14 @@ body {
 @media (max-width: 600px) {
     .container {
         padding: 0 10px;
+    }
+
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
     }
 
     .main-video {
