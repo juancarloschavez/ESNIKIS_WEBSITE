@@ -286,6 +286,14 @@ body {
     font-weight: 400;
 }
 
+.feature-item-note {
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+}
+
 .features-list {
     list-style: none;
     font-size: 1.4rem;

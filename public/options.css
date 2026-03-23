@@ -27,16 +27,16 @@ body {
 
 .options-title {
     font-family: 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     animation: fadeInDown 0.8s ease-out;
 }
 
 .options-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
     perspective: 1000px;
 }
