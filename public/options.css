@@ -92,7 +92,6 @@ body {
 .footer-note {
     font-size: 0.85rem;
     color: #888;
-    max-width: 650px;
     margin: 0 auto;
     line-height: 1.5;
     font-weight: 400;
@@ -126,8 +125,8 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .options-title {
-        font-size: 2.2rem;
-        margin-bottom: 30px;
+        font-size: 1.7rem;
+        margin-bottom: 5px;
     }
 
     .option-card {
