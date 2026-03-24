@@ -309,56 +309,115 @@ body {
     /* Changed back to flex-start for top alignment */
 }
 
+/* Feature Icons in List */
 .features-list li i,
 .features-list li svg {
     margin-right: 12px;
     margin-top: 0.25rem;
-    /* Small offset to align with the first line's text center/baseline */
     stroke-width: 3px;
     color: var(--primary-blue);
     width: 20px;
     height: 20px;
     min-width: 20px;
-    /* Force minimum width */
     flex-shrink: 0;
 }
 
-/* Footer elements */
-.footer-links {
-    margin-top: 120px;
-    margin-bottom: 40px;
-    font-size: 1.2rem;
+/* New FAQ Section */
+.faq-section {
+    padding: 60px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-card {
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 60px 20px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    background: #edf2fa;
+    width: 100%;
+}
+
+.faq-title {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.faq-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-faq-premium {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 18px 45px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(59, 91, 219, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: inherit;
+}
+
+.btn-faq-premium i {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.5px;
+}
+
+.btn-faq-premium:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(59, 91, 219, 0.4);
+    background-color: var(--primary-blue-hover);
+}
+
+.link-secondary {
+    color: #888;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.link-secondary i {
+    width: 18px;
+    height: 18px;
+}
+
+.link-secondary:hover {
+    color: var(--primary-blue);
+}
+
+.extra-links {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .footer-logo {
+    margin-top: 40px;
     margin-bottom: -10px;
 }
 
-.link-btn {
-    background: none;
-    border: none;
-    color: #888;
-    text-decoration: underline;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 6px;
-}
-
-.faq-icon {
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-    flex-shrink: 0;
-    stroke-width: 2px;
-    margin-top: 3px;
-}
-
 .separator {
-    color: #ccc;
-    margin: 0 5px;
+    display: none;
 }
 
 .photo-placeholders {
